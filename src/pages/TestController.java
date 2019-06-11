@@ -304,6 +304,13 @@ public class TestController {
                     timer.cancel();
                     timer = null;
                 }
+                if(currentQuestion != all){
+                    Alert alert = new Alert(Alert.AlertType.WARNING);
+                    alert.setTitle("Оповещение");
+                    alert.setHeaderText(null);
+                    alert.setContentText("Вы прервали тестирование.\nРезультаты обнулены.");
+                    alert.showAndWait();
+                }
             }
         });
     }
