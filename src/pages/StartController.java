@@ -57,4 +57,19 @@ public class StartController {
             Platform.exit();
         }
     }
+
+    public void startTest(ActionEvent actionEvent) throws IOException {
+        Parent root = null;
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../pages/test.fxml"));
+        root = fxmlLoader.load();
+        Stage stage = new Stage();
+        stage.setTitle("Процесс тестирования");
+        Scene scene = new Scene(root, 800, 650);
+        stage.setScene(scene);
+        scene.getStylesheets().add("res/style/main.css");
+        TestController controller = fxmlLoader.getController();
+        controller.setStage(stage);
+        //controller.init();
+        stage.showAndWait();
+    }
 }

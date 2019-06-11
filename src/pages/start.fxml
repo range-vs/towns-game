@@ -15,14 +15,19 @@
       <GridPane BorderPane.alignment="CENTER">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
         </columnConstraints>
         <rowConstraints>
           <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button mnemonicParsing="false" onAction="#startHistory" text="История" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-            <Button mnemonicParsing="false" onAction="#startEducation" text="Обучение" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+             <Button mnemonicParsing="false" onAction="#startHistory" text="История" GridPane.halignment="CENTER"
+                     GridPane.valignment="CENTER"/>
+             <Button mnemonicParsing="false" onAction="#startTest" text="Тестирование" GridPane.columnIndex="1"
+                     GridPane.halignment="CENTER"/>
+             <Button mnemonicParsing="false" onAction="#startEducation" text="Обучение" GridPane.columnIndex="2"
+                     GridPane.halignment="CENTER"/>
          </children>
       </GridPane>
    </bottom>
